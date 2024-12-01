@@ -1,9 +1,189 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="25.0.1">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="2074" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2963" dy="-1831" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-214" value="用户" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="3790" width="150" height="1408" as="geometry" />
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-215" value="系统" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="283" y="3790" width="150" height="1408" as="geometry" />
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-216" value="房间服务" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="498" y="3790" width="150" height="1408" as="geometry" />
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-217" value="数据库" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="714" y="3790" width="150" height="1408" as="geometry" />
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-218" value="查看房型列表" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-214" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="3897" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-219" value="请求房型数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="3949" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-220" value="查询房型信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-217">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="4001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-221" value="返回房型数据" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-217" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="693" y="4053" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-222" value="返回房型信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="477" y="4105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-223" value="显示房型列表" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-214">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="238" y="4157" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-224" value="点击房型，跳转至详细页面" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-214" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="4209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-225" value="获取房型详情" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="4261" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-226" value="查询房型详细信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-217">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="4313" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-227" value="返回房型详情" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-217" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="693" y="4365" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-228" value="返回房型详细信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="477" y="4417" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-229" value="显示详细页面" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-214">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="238" y="4469" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-230" value="点击预定" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-214" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="4521" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-231" value="验证房型库存" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="4573" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-232" value="查询库存" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-217">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="4625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-233" value="返回库存状态" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-217" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="693" y="4677" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-234" value="返回验证结果" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="477" y="4729" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-235" value="显示订单信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-214">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="238" y="4781" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-236" value="模拟支付并确认" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-214" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="4833" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-237" value="更新库存并保存订单" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="474" y="4885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-238" value="更新库存与订单信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-217">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="4937" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-239" value="确认成功" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-217" target="TWpqFO4F_AhW2CpB3fRh-216">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="693" y="4989" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-240" value="返回确认信息" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-216" target="TWpqFO4F_AhW2CpB3fRh-215">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="477" y="5041" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TWpqFO4F_AhW2CpB3fRh-241" value="支付成功，预定完成" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="TWpqFO4F_AhW2CpB3fRh-215" target="TWpqFO4F_AhW2CpB3fRh-214">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="238" y="5093" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
